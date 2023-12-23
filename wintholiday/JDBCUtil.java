@@ -10,7 +10,7 @@ public class JDBCUtil {
     private static final String url = "jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai";
 
     private static final String username = "root";
-    private static final String password = "";
+    private static final String password = "zfx083881";
 
     // 获取数据库连接
     public static Connection getConnection() {

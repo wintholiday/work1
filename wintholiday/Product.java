@@ -2,11 +2,13 @@ package 订单;
 
 public class Product {
     private int productId;
+    private String productInfo;
     private String productName;
     private double productPrice;
 
-    public Product(int productId, String productName, double productPrice) {
+    public Product(int productId, String productInfo,String productName, double productPrice) {
         this.productId = productId;
+        this.productInfo = productInfo;
         this.productName = productName;
         this.productPrice = productPrice;
     }
@@ -14,6 +16,9 @@ public class Product {
     public Product(int productId, String productName) {
         this.productId = productId;
         this.productName = productName;
+    }
+
+    public Product() {
     }
 
     /**
@@ -65,4 +70,23 @@ public class Product {
     }
 
 
+    /**
+     * 获取
+     * @return productInfo
+     */
+    public String getProductInfo() {
+        return productInfo;
+    }
+
+    /**
+     * 设置
+     * @param productInfo
+     */
+    public void setProductInfo(String productInfo) {
+        this.productInfo = productInfo;
+    }
+
+    public String toString() {
+        return "Product{productId = " + productId + ", productInfo = " + productInfo + ", productName = " + productName + ", productPrice = " + productPrice + "}";
+    }
 }
